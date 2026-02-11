@@ -1,139 +1,517 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
   <!-- Basic Meta Tags -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Somalia Sovereignty Watch - Foreign Deals Database | Transparency & Accountability</title>
-<meta name="description" content="Public database documenting 18 foreign agreements involving Somalia. Defense pacts, port concessions, oil licensing, fishing rights - all transparency-scored with full source documentation.">
-<meta name="keywords" content="Somalia foreign agreements, Somalia transparency, Horn of Africa governance, Somalia defense deals, Berbera port, Ethiopia Somaliland MoU, Turkey Somalia, UAE Somalia, Somalia oil licensing, civic tech Somalia, governance database">
-<meta name="author" content="Mohamed Abdi Mohamed">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://moscode404.github.io/sovwatch-somalia/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somalia Sovereignty Watch - Foreign Deals Database | Transparency & Accountability</title>
+  <meta name="description" content="Public database documenting 18 foreign agreements involving Somalia. Defense pacts, port concessions, oil licensing, fishing rights - all transparency-scored with full source documentation.">
+  <meta name="keywords" content="Somalia foreign agreements, Somalia transparency, Horn of Africa governance, Somalia defense deals, Berbera port, Ethiopia Somaliland MoU, Turkey Somalia, UAE Somalia, Somalia oil licensing, civic tech Somalia, governance database">
+  <meta name="author" content="Mohamed Abdi Mohamed">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sovwatchsomalia.org/">
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://moscode404.github.io/sovwatch-somalia/">
-<meta property="og:title" content="Somalia Sovereignty Watch - Foreign Deals Database">
-<meta property="og:description" content="Public database documenting 18 foreign agreements involving Somalia. Defense, ports, oil, fishing - transparency-scored with full sources. 35% have zero transparency.">
-<meta property="og:site_name" content="Somalia Sovereignty Watch">
-<meta property="og:locale" content="en_US">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sovwatchsomalia.org/">
+  <meta property="og:title" content="Somalia Sovereignty Watch - Foreign Deals Database">
+  <meta property="og:description" content="Public database documenting 18 foreign agreements involving Somalia. Defense, ports, oil, fishing - transparency-scored with full sources. 35% have zero transparency.">
+  <meta property="og:site_name" content="Somalia Sovereignty Watch">
+  <meta property="og:locale" content="en_US">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@SovWatchSo">
-<meta name="twitter:creator" content="@SovWatchSo">
-<meta name="twitter:url" content="https://moscode404.github.io/sovwatch-somalia/">
-<meta name="twitter:title" content="Somalia Sovereignty Watch - Foreign Deals Database">
-<meta name="twitter:description" content="Public database documenting 18 foreign agreements involving Somalia. Transparency-scored, fully sourced, mobile-accessible.">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@SovWatchSo">
+  <meta name="twitter:creator" content="@SovWatchSo">
+  <meta name="twitter:url" content="https://sovwatchsomalia.org/">
+  <meta name="twitter:title" content="Somalia Sovereignty Watch - Foreign Deals Database">
+  <meta name="twitter:description" content="Public database documenting 18 foreign agreements involving Somalia. Transparency-scored, fully sourced, mobile-accessible.">
 
-<!-- Additional SEO -->
-<meta name="language" content="English">
-<meta name="revisit-after" content="7 days">
-<meta name="distribution" content="global">
-<meta name="rating" content="general">
-<meta name="theme-color" content="#4189DD">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Somalia Sovereignty Watch</title>  <!-- Bootstrap CSS -->  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">  <style>
-    body { scroll-behavior: smooth; }
+  <!-- Geographic Targeting -->
+  <meta name="geo.region" content="SO">
+  <meta name="geo.placename" content="Somalia">
+  <meta name="geo.position" content="2.0469;45.3182">
+
+  <!-- Additional SEO -->
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="distribution" content="global">
+  <meta name="rating" content="general">
+  <meta name="theme-color" content="#4189DD">
+  
+  <!-- Sitemap -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    body { 
+      scroll-behavior: smooth;
+      padding-top: 56px; /* Account for fixed navbar */
+    }
     .hero {
-      background: linear-gradient(135deg, #1e90ff, #007bff);
+      background: linear-gradient(135deg, #4189DD 0%, #5BA3F5 100%);
       color: white;
       padding: 5rem 1rem;
     }
-    .hero h1 { font-weight: 700; }
-    .badge-none { background-color: #6c757d; }
-    footer { font-size: 0.9rem; }
-  </style></head>
-<body><!-- NAVBAR --><nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Somalia Sovereignty Watch</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#database">Database</a></li>
-        <li class="nav-item"><a class="nav-link" href="#methodology">Methodology</a></li>
-        <li class="nav-item"><a class="nav-link" href="#index">Transparency Index</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav><!-- HERO --><section class="hero text-center">
-  <div class="container">
-    <h1 class="display-5">Somalia Sovereignty Watch</h1>
-    <p class="lead mt-3">Public memory for public sovereignty</p>
-  </div>
-</section><!-- ABOUT --><section id="about" class="py-5">
-  <div class="container">
-    <h2>About This Project</h2>
-    <p>
-      Somalia Sovereignty Watch tracks foreign agreements involving Somalia — including defense pacts,
-      port deals, oil licenses, fishing rights, and infrastructure projects.
-    </p>
-    <p>
-      Our goal is simple: Somalis deserve to know what is being agreed to in their name.
-      Transparency strengthens partnerships. Without public knowledge, there can be no accountability.
-    </p>
-  </div>
-</section><!-- DATABASE --><section id="database" class="py-5 bg-light">
-  <div class="container">
-    <h2>Foreign Deals Database</h2>
-    <p>Live, searchable public record of foreign agreements involving Somalia.</p><iframe
-  src="https://airtable.com/embed/appGrJoAAqsUveqrZ/shrtINkpQFMlXCsXO"
-  width="100%"
-  height="750"
-  frameborder="0"
-  style="background: transparent; border: 1px solid #ccc;"
-  loading="lazy">
-</iframe>
+    .hero h1 { 
+      font-weight: 700;
+      font-size: 2.8rem;
+    }
+    .hero .lead {
+      font-size: 1.3rem;
+      opacity: 0.95;
+    }
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+    }
+    .database-embed {
+      margin: 30px 0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .badge-none { 
+      background-color: #dc3545;
+      color: white;
+    }
+    .stats-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+    }
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #4189DD;
+      margin: 0;
+    }
+    .stat-label {
+      font-size: 1rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer { 
+      font-size: 0.9rem;
+      background: #2c3e50;
+    }
+    footer a {
+      color: #4189DD;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .method-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #4189DD;
+    }
+    .navbar-brand {
+      font-weight: 600;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .stat-number {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
 
-  </div>
-</section><!-- METHODOLOGY --><section id="methodology" class="py-5">
-  <div class="container">
-    <h2>Methodology</h2>
-    <ul>
-      <li>Defense and military agreements</li>
-      <li>Ports and maritime access</li>
-      <li>Oil, gas, and fishing licenses</li>
-      <li>Infrastructure and telecom projects</li>
-      <li>Diplomatic memoranda</li>
-    </ul>
-    <p>
-      All entries rely exclusively on verifiable public sources. We document facts and identify gaps
-      in disclosure. We do not speculate.
-    </p>
-  </div>
-</section><!-- TRANSPARENCY INDEX --><section id="index" class="py-5 bg-light">
-  <div class="container">
-    <h2>Somalia Sovereignty Transparency Index</h2>
-    <p>
-      Each agreement is scored on public disclosure, parliamentary oversight, and legal clarity.
-    </p>
-    <ul>
-      <li><span class="badge bg-success">High</span> – Full public disclosure</li>
-      <li><span class="badge bg-warning text-dark">Medium</span> – Partial disclosure</li>
-      <li><span class="badge bg-danger">Low</span> – Minimal disclosure</li>
-      <li><span class="badge badge-none">None</span> – No public access</li>
-    </ul>
-  </div>
-</section><!-- CONTACT --><section id="contact" class="py-5">
-  <div class="container">
-    <h2>Contact & Submissions</h2>
-    <p>
-      Know of a deal we missed? Have documents to share?
-    </p>
-    <p>
-      X/Twitter: <strong>@SovWatchSo</strong><br>
-      Email: <em>sovwatch@gmail.com</em>
-    </p>
-  </div>
-</section><!-- FOOTER --><footer class="bg-dark text-light py-3">
-  <div class="container text-center">
-    <p class="mb-1">Somalia Sovereignty Watch | Independent, non-partisan research</p>
-    <p class="mb-0">Volunteer-run · Public sources only</p>
-  </div>
-</footer><!-- Bootstrap JS --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script></body>
-</html>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#" aria-label="Somalia Sovereignty Watch Home">
+        🇸🇴 Somalia Sovereignty Watch
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#database">Database</a></li>
+          <li class="nav-item"><a class="nav-link" href="#methodology">Methodology</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stats">Key Findings</a></li>
+          <li class="nav-item"><a class="nav-link" href="#transparency">Transparency Index</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero text-center">
+    <div class="container">
+      <h1 class="display-5">Somalia Sovereignty Watch</h1>
+      <p class="lead mt-3">Public memory for public sovereignty</p>
+      <p class="mt-4">
+        <a href="#database" class="btn btn-light btn-lg">View Database</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">About This Project</h2>
+      <p class="lead">
+        Somalia Sovereignty Watch tracks foreign agreements involving Somalia — including defense pacts,
+        port deals, oil licenses, fishing rights, and infrastructure projects.
+      </p>
+      <p>
+        <strong>Our goal is simple:</strong> Somalis deserve to know what is being agreed to in their name.
+      </p>
+      <p>
+        We don't oppose foreign partnerships. We believe transparency strengthens them. Without public knowledge 
+        of agreements, there can be no public accountability.
+      </p>
+      <p>
+        Somalia lacks institutional memory. Deals are signed, then forgotten. Officials change, promises vanish. 
+        Foreign powers negotiate in the shadows.
+      </p>
+      <p>
+        <strong>We're building a permanent, public record.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- KEY STATS -->
+  <section id="stats" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Key Findings</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="stats-box text-center">
+            <p class="stat-number">18</p>
+            <p class="stat-label">Documented Agreements</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="stats-box text-center">
+            <p class="stat-number text-danger">35%</p>
+            <p class="stat-label">Have NO Transparency</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="stats-box text-center">
+            <p class="stat-number">10+</p>
+            <p class="stat-label">Foreign Partners</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="stats-box text-center">
+            <p class="stat-number text-success">0%</p>
+            <p class="stat-label">High Transparency</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-muted">
+        That's the problem we're documenting.
+      </p>
+    </div>
+  </section>
+
+  <!-- DATABASE -->
+  <section id="database" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Foreign Deals Database</h2>
+      <p class="lead">
+        Live, searchable public record of foreign agreements involving Somalia.
+      </p>
+      <p>
+        Click any row to see full details, sources, and analysis. Use filters to search by country, 
+        sector, or transparency score.
+      </p>
+
+      <div class="database-embed">
+        <iframe
+          src="https://airtable.com/embed/appGrJoAAqsUveqrZ/shrtINkpQFMlXCsXO"
+          width="100%"
+          height="750"
+          frameborder="0"
+          style="background: transparent; border: none;"
+          loading="lazy"
+          title="Somalia Foreign Agreements Database">
+        </iframe>
+      </div>
+
+      <p class="text-muted small">
+        <em>Every claim is sourced. Everything is verifiable.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY -->
+  <section id="methodology" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Our Methodology</h2>
+      
+      <div class="row">
+        <div class="col-md-4">
+          <div class="method-card">
+            <h3 class="h5">📊 What We Track</h3>
+            <ul class="mb-0">
+              <li>Defense pacts and military cooperation</li>
+              <li>Port leases and maritime access</li>
+              <li>Oil and gas exploration licenses</li>
+              <li>Fishing rights and marine resources</li>
+              <li>Infrastructure projects</li>
+              <li>Telecommunications agreements</li>
+              <li>Diplomatic memoranda</li>
+            </ul>
+            <p class="mt-3 mb-0"><em>If it involves Somali territory, resources, or sovereignty — it's in our scope.</em></p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="method-card">
+            <h3 class="h5">📚 Our Sources</h3>
+            <ul class="mb-0">
+              <li>Official government announcements</li>
+              <li>Parliamentary records and debates</li>
+              <li>UN reports and legal filings</li>
+              <li>Verified journalism (Somali & international)</li>
+              <li>Published legal documents</li>
+            </ul>
+            <p class="mt-3 mb-0"><em>We use only verifiable, public sources. We do not speculate.</em></p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="method-card">
+            <h3 class="h5">🎯 Our Standards</h3>
+            <ul class="mb-0">
+              <li>Direct source links (verify everything)</li>
+              <li>Clear timelines (announced → signed → ratified)</li>
+              <li>Transparency scores (High/Medium/Low/None)</li>
+              <li>Legal status tracking</li>
+              <li>What's known vs. what's missing</li>
+            </ul>
+            <p class="mt-3 mb-0"><em>We document facts and identify gaps in disclosure.</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSPARENCY INDEX -->
+  <section id="transparency" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Somalia Sovereignty Transparency Index</h2>
+      <p class="lead">
+        Each agreement is scored based on public disclosure, parliamentary oversight, and legal clarity.
+      </p>
+      
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h3 class="h5">Transparency Scoring Criteria:</h3>
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>Score</th>
+                <th>Criteria</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="badge bg-success">High</span></td>
+                <td>Full agreement text public, parliamentary debate, terms disclosed, revenue sharing explained</td>
+              </tr>
+              <tr>
+                <td><span class="badge bg-warning text-dark">Medium</span></td>
+                <td>Framework published, key terms known, some debate, but specific clauses not disclosed</td>
+              </tr>
+              <tr>
+                <td><span class="badge bg-danger">Low</span></td>
+                <td>Only press release available, basic outline known, specifics missing, little scrutiny</td>
+              </tr>
+              <tr>
+                <td><span class="badge badge-none">None</span></td>
+                <td>Agreement exists but no text available, terms completely undisclosed, no public debate</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-6">
+          <h3 class="h5">Current Distribution:</h3>
+          <div class="stats-box">
+            <div class="mb-3">
+              <span class="badge badge-none me-2">No Transparency</span>
+              <strong>35%</strong> (7 deals)
+            </div>
+            <div class="mb-3">
+              <span class="badge bg-danger me-2">Low Transparency</span>
+              <strong>20%</strong> (4 deals)
+            </div>
+            <div class="mb-3">
+              <span class="badge bg-warning text-dark me-2">Medium Transparency</span>
+              <strong>45%</strong> (9 deals)
+            </div>
+            <div class="mb-3">
+              <span class="badge bg-success me-2">High Transparency</span>
+              <strong>0%</strong> (0 deals)
+            </div>
+            <p class="text-muted small mt-3 mb-0">
+              <em>Not a single agreement meets high transparency standards. That's the governance gap we're documenting.</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Submit Information</h2>
+      <p class="lead">
+        Know of a deal we missed? Have documents or information to share?
+      </p>
+      <p>
+        We welcome submissions from journalists, researchers, government officials, and citizens.
+      </p>
+      
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h3 class="h5">Contact Us:</h3>
+          <p>
+            <strong>Twitter/X:</strong> <a href="https://twitter.com/SovWatchSo" target="_blank" rel="noopener">@SovWatchSo</a><br>
+            <strong>Email:</strong> <a href="mailto:sovwatch@gmail.com">sovwatch@gmail.com</a>
+          </p>
+          <p class="text-muted small">
+            All submissions are reviewed and verified before being added to the database. 
+            We protect source confidentiality when requested.
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <h3 class="h5">Corrections & Updates:</h3>
+          <p>
+            Found an error? Have additional information?
+          </p>
+          <p>
+            We update within 48 hours and note all corrections publicly. Transparency goes both ways.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h5>Somalia Sovereignty Watch</h5>
+          <p class="mb-1">Independent, non-partisan research</p>
+          <p class="mb-1">Funded by: Currently unfunded, volunteer-run</p>
+          <p class="mb-0">Contact: <a href="https://twitter.com/SovWatchSo" target="_blank" rel="noopener">@SovWatchSo</a></p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-1">Website: <a href="https://sovwatchsomalia.org">sovwatchsomalia.org</a></p>
+          <p class="mb-1">Last updated: February 9, 2026</p>
+          <p class="mb-0 small text-muted">Public sources only · All claims sourced · Open data</p>
+        </div>
+      </div>
+      <hr class="my-3" style="border-color: rgba(255,255,255,0.1);">
+      <div class="text-center">
+        <p class="mb-0 small">
+          🇸🇴 Public memory for public sovereignty
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Structured Data for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Somalia Foreign Agreements Database",
+    "description": "Comprehensive public database documenting foreign agreements involving Somalia, including defense pacts, port concessions, oil licensing, and fishing rights. Each entry includes transparency scoring, source documentation, and legal status analysis.",
+    "url": "https://sovwatchsomalia.org/",
+    "creator": {
+      "@type": "Person",
+      "name": "Mohamed Abdi Mohamed",
+      "description": "Digital Media & AI Automation Specialist, MSc Political Science & International Relations",
+      "sameAs": [
+        "https://www.linkedin.com/in/mohamed-abdi-mohamed-a9bb2ba4",
+        "https://twitter.com/SovWatchSo"
+      ]
+    },
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "Somalia"
+    },
+    "temporalCoverage": "2013/2025",
+    "keywords": [
+      "Somalia",
+      "foreign agreements",
+      "transparency",
+      "governance",
+      "Horn of Africa",
+      "defense deals",
+      "port concessions",
+      "civic tech"
+    ],
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "isAccessibleForFree": true,
+    "distribution": {
+      "@type": "DataDownload",
+      "encodingFormat": "HTML",
+      "contentUrl": "https://sovwatchsomalia.org/"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Somalia Sovereignty Watch",
+    "url": "https://sovwatchsomalia.org/",
+    "description": "Public memory for public sovereignty - documenting foreign agreements involving Somalia",
+    "author": {
+      "@type": "Person",
+      "name": "Mohamed Abdi Mohamed",
+      "url": "https://www.linkedin.com/in/mohamed-abdi-mohamed-a9bb2ba4"
+    },
+    "inLanguage": "en",
+    "copyrightYear": 2025,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://sovwatchsomalia.org/#database",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Google Analytics - Add your tracking ID -->
+  <!-- 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+            </html>
