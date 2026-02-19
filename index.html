@@ -39,109 +39,30 @@
   <meta name="rating" content="general">
   <meta name="theme-color" content="#4189DD">
   
-  <!-- Sitemap -->
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   
-  <style>
-    body { 
-      scroll-behavior: smooth;
-      padding-top: 56px;
-    }
-    .hero {
-      background: linear-gradient(135deg, #4189DD 0%, #5BA3F5 100%);
-      color: white;
-      padding: 5rem 1rem;
-    }
-    .hero h1 { 
-      font-weight: 700;
-      font-size: 2.8rem;
-    }
-    .hero .lead {
-      font-size: 1.3rem;
-      opacity: 0.95;
-    }
-    .section-title {
-      font-size: 2.2rem;
-      margin-bottom: 1.5rem;
-      color: #2c3e50;
-    }
-    .database-embed {
-      margin: 30px 0;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    .badge-none { 
-      background-color: #dc3545;
-      color: white;
-    }
-    .stats-box {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      margin-bottom: 2rem;
-    }
-    .stat-number {
-      font-size: 3rem;
-      font-weight: 700;
-      color: #4189DD;
-      margin: 0;
-    }
-    .stat-label {
-      font-size: 1rem;
-      color: #666;
-      margin-top: 0.5rem;
-    }
-    footer { 
-      font-size: 0.9rem;
-      background: #2c3e50;
-    }
-    footer a {
-      color: #4189DD;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    .method-card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      margin-bottom: 1.5rem;
-      border-left: 4px solid #4189DD;
-    }
-    .navbar-brand {
-      font-weight: 600;
-    }
-    .alert-info {
-      background-color: #e7f3ff;
-      border-color: #b3d9ff;
-      color: #004085;
-    }
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-      .stat-number {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#" aria-label="Somalia Sovereignty Watch Home">
-        🇸🇴 Somalia Sovereignty Watch
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-flag"></i>
+        Somalia Sovereignty Watch
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="nav">
@@ -149,8 +70,7 @@
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#database">Database</a></li>
           <li class="nav-item"><a class="nav-link" href="#methodology">Methodology</a></li>
-          <li class="nav-item"><a class="nav-link" href="#stats">Key Findings</a></li>
-          <li class="nav-item"><a class="nav-link" href="#transparency">Transparency Index</a></li>
+          <li class="nav-item"><a class="nav-link" href="#transparency">Transparency</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -158,100 +78,107 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero text-center">
+  <section class="hero">
     <div class="container">
-      <h1 class="display-5">Somalia Sovereignty Watch</h1>
-      <p class="lead mt-3">Public memory for public sovereignty</p>
-      <p class="mt-4">
-        <a href="#database" class="btn btn-light btn-lg">View Database</a>
-      </p>
+      <div class="hero-content text-center fade-in-up">
+        <h1>Somalia Sovereignty Watch</h1>
+        <p class="lead">Public memory for public sovereignty</p>
+        <p class="mb-0">Documenting 55 foreign agreements • $15B+ tracked • Full transparency analysis</p>
+        <div class="mt-4">
+          <a href="#database" class="btn btn-light btn-lg">
+            <i class="bi bi-database me-2"></i>View Database
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Key Findings</h2>
+        <p class="section-subtitle">Most comprehensive public database of Somalia's foreign agreements</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-card text-center">
+            <div class="stat-number">55</div>
+            <div class="stat-label">Agreements Documented</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-card text-center">
+            <div class="stat-number danger">29%</div>
+            <div class="stat-label">Zero Transparency</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-card text-center">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Foreign Partners</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-card text-center">
+            <div class="stat-number warning">6%</div>
+            <div class="stat-label">High Transparency</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="py-5">
+  <section id="about">
     <div class="container">
-      <h2 class="section-title">About This Project</h2>
-      <p class="lead">
-        Somalia Sovereignty Watch tracks foreign agreements involving Somalia — including defense pacts,
-        port deals, oil licenses, fishing rights, and infrastructure projects.
-      </p>
-      <p>
-        <strong>Our goal is simple:</strong> Somalis deserve to know what is being agreed to in their name.
-      </p>
-      <p>
-        We don't oppose foreign partnerships. We believe transparency strengthens them. Without public knowledge 
-        of agreements, there can be no public accountability.
-      </p>
-      <p>
-        Somalia lacks institutional memory. Deals are signed, then forgotten. Officials change, promises vanish. 
-        Foreign powers negotiate in the shadows.
-      </p>
-      <p>
-        <strong>We're building a permanent, public record.</strong>
-      </p>
-    </div>
-  </section>
-
-  <!-- KEY STATS -->
-  <section id="stats" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title text-center mb-5">Key Findings</h2>
-      <div class="row">
-        <div class="col-md-3 col-sm-6 mb-4">
-          <div class="stats-box text-center">
-            <p class="stat-number">55</p>
-            <p class="stat-label">Documented Agreements</p>
-          </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title">About This Project</h2>
+          <p class="lead text-muted">
+            Somalia Sovereignty Watch tracks foreign agreements involving Somalia — defense pacts, port deals, oil licenses, fishing rights, and infrastructure projects.
+          </p>
         </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <div class="stats-box text-center">
-            <p class="stat-number text-danger">29%</p>
-            <p class="stat-label">Have NO Transparency</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <div class="stats-box text-center">
-            <p class="stat-number">20+</p>
-            <p class="stat-label">Foreign Partners</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <div class="stats-box text-center">
-            <p class="stat-number text-warning">6%</p>
-            <p class="stat-label">High Transparency</p>
+        <div class="col-lg-6">
+          <div class="method-card">
+            <h3><i class="bi bi-bullseye text-primary"></i> Our Mission</h3>
+            <p class="mb-3">
+              <strong>Somalis deserve to know what is being agreed to in their name.</strong>
+            </p>
+            <p class="mb-3">
+              Somalia lacks institutional memory. Deals are signed, then forgotten. Officials change, promises vanish. Foreign powers negotiate in the shadows.
+            </p>
+            <p class="mb-0">
+              We're building a permanent, public record. Transparency strengthens partnerships — it doesn't weaken them.
+            </p>
           </div>
         </div>
       </div>
-      <p class="text-center text-muted">
-        Most comprehensive public database of Somalia's foreign agreements anywhere.
-      </p>
     </div>
   </section>
 
   <!-- DATABASE -->
-  <section id="database" class="py-5">
+  <section id="database" class="stats-section">
     <div class="container">
-      <h2 class="section-title">Foreign Deals Database</h2>
-      <p class="lead">
-        Live, searchable public record of 55 foreign agreements involving Somalia.
-      </p>
-      <p>
-        Click any row to see full details, sources, and analysis. Use filters to search by country, 
-        sector, or transparency score.
-      </p>
+      <div class="text-center mb-5">
+        <h2 class="section-title">Foreign Deals Database</h2>
+        <p class="section-subtitle">Live, searchable public record • All sources verified • Updated regularly</p>
+      </div>
 
-      <div class="alert alert-info mb-4" role="alert">
-        <strong>📅 Note on Dates:</strong> For many agreements, exact signing dates are not publicly disclosed. 
-        When only the year is known, we use January 1st as a placeholder to enable chronological sorting. 
-        This date opacity itself reflects the transparency crisis we're documenting.
+      <div class="database-alert">
+        <strong><i class="bi bi-calendar3"></i> Note on Dates</strong>
+        <p class="mb-0">
+          For many agreements, exact signing dates are not publicly disclosed. When only the year is known, 
+          we use January 1st as a placeholder. This date opacity itself reflects the transparency crisis we're documenting.
+        </p>
       </div>
 
       <div class="database-embed">
         <iframe
           src="https://airtable.com/embed/appGrJoAAqsUveqrZ/shrtINkpQFMlXCsXO"
           width="100%"
-          height="750"
+          height="800"
           frameborder="0"
           style="background: transparent; border: none;"
           loading="lazy"
@@ -259,84 +186,85 @@
         </iframe>
       </div>
 
-      <p class="text-muted small">
-        <em>Every claim is sourced. Everything is verifiable. Updated regularly as new deals are signed.</em>
+      <p class="text-center text-muted mt-3">
+        <i class="bi bi-check-circle text-success me-2"></i>
+        <em>Every claim is sourced • Everything is verifiable • Full transparency scoring</em>
       </p>
     </div>
   </section>
 
   <!-- METHODOLOGY -->
-  <section id="methodology" class="py-5 bg-light">
+  <section id="methodology">
     <div class="container">
-      <h2 class="section-title">Our Methodology</h2>
+      <div class="text-center mb-5">
+        <h2 class="section-title">Our Methodology</h2>
+        <p class="section-subtitle">Rigorous research • Verified sources • Transparent standards</p>
+      </div>
       
-      <div class="row">
-        <div class="col-md-4">
+      <div class="row g-4">
+        <div class="col-lg-4">
           <div class="method-card">
-            <h3 class="h5">📊 What We Track</h3>
-            <ul class="mb-0">
-              <li>Defense pacts and military cooperation</li>
-              <li>Port leases and maritime access</li>
-              <li>Oil and gas exploration licenses</li>
-              <li>Fishing rights and marine resources</li>
+            <h3><i class="bi bi-graph-up-arrow"></i> What We Track</h3>
+            <ul>
+              <li>Defense pacts & military cooperation</li>
+              <li>Port leases & maritime access</li>
+              <li>Oil & gas exploration licenses</li>
+              <li>Fishing rights & marine resources</li>
               <li>Infrastructure projects</li>
               <li>Telecommunications agreements</li>
               <li>Development programs</li>
               <li>Diplomatic memoranda</li>
             </ul>
-            <p class="mt-3 mb-0"><em>If it involves Somali territory, resources, or sovereignty — it's in our scope.</em></p>
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <div class="method-card">
-            <h3 class="h5">📚 Our Sources</h3>
-            <ul class="mb-0">
+            <h3><i class="bi bi-journal-check"></i> Our Sources</h3>
+            <ul>
               <li>Official government announcements</li>
-              <li>Parliamentary records and debates</li>
-              <li>UN reports and legal filings</li>
-              <li>ICJ judgments and international law</li>
-              <li>Verified journalism (Somali & international)</li>
+              <li>Parliamentary records & debates</li>
+              <li>UN reports & legal filings</li>
+              <li>ICJ judgments</li>
+              <li>Verified journalism</li>
               <li>Published legal documents</li>
             </ul>
-            <p class="mt-3 mb-0"><em>We use only verifiable, public sources. We do not speculate.</em></p>
+            <p class="mt-3 mb-0 text-muted small">
+              <em>We use only verifiable, public sources. We do not speculate.</em>
+            </p>
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <div class="method-card">
-            <h3 class="h5">🎯 Our Standards</h3>
-            <ul class="mb-0">
-              <li>Direct source links (verify everything)</li>
-              <li>Clear timelines (announced → signed → ratified)</li>
-              <li>Transparency scores (High/Medium/Low/None)</li>
+            <h3><i class="bi bi-award"></i> Our Standards</h3>
+            <ul>
+              <li>Direct source links</li>
+              <li>Clear timelines</li>
+              <li>Transparency scores</li>
               <li>Legal status tracking</li>
-              <li>What's known vs. what's missing</li>
+              <li>Gap identification</li>
               <li>Regular updates</li>
             </ul>
-            <p class="mt-3 mb-0"><em>We document facts and identify gaps in disclosure.</em></p>
+            <p class="mt-3 mb-0 text-muted small">
+              <em>We document facts and identify gaps in disclosure.</em>
+            </p>
           </div>
         </div>
       </div>
 
-      <!-- Date Precision Methodology -->
       <div class="row mt-4">
         <div class="col-12">
           <div class="method-card">
-            <h3 class="h5">📅 Handling Date Uncertainty</h3>
+            <h3><i class="bi bi-calendar-event"></i> Date Precision</h3>
             <p class="mb-2">
-              Many foreign agreements involving Somalia lack publicly announced signing dates. This opacity 
-              is itself a transparency indicator.
-            </p>
-            <p class="mb-2">
-              <strong>Our approach:</strong> When only the year is known, we use January 1st as a placeholder 
-              in date fields to enable chronological sorting. The "Known Terms" field clarifies actual 
-              date precision for each agreement.
+              Many agreements lack publicly announced signing dates. This opacity is itself a transparency indicator.
             </p>
             <p class="mb-0">
-              <strong>Why this matters:</strong> Transparent agreements announce exact signing dates publicly. 
-              The fact that many Somalia deals lack even this basic information demonstrates the systematic 
-              transparency failure we're documenting. Date availability itself is a transparency metric.
+              <strong>Our approach:</strong> When only the year is known, we use January 1st as a placeholder 
+              for sorting purposes. The "Known Terms" field clarifies actual date precision. Transparent 
+              agreements announce exact dates publicly — the fact that many Somalia deals lack even this 
+              basic information demonstrates the systematic transparency failure we're documenting.
             </p>
           </div>
         </div>
@@ -345,65 +273,122 @@
   </section>
 
   <!-- TRANSPARENCY INDEX -->
-  <section id="transparency" class="py-5">
+  <section id="transparency" class="stats-section">
     <div class="container">
-      <h2 class="section-title">Somalia Sovereignty Transparency Index</h2>
-      <p class="lead">
-        Each agreement is scored based on public disclosure, parliamentary oversight, and legal clarity.
-      </p>
+      <div class="text-center mb-5">
+        <h2 class="section-title">Transparency Index</h2>
+        <p class="section-subtitle">Scoring methodology based on public disclosure & accountability</p>
+      </div>
       
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <h3 class="h5">Transparency Scoring Criteria:</h3>
-          <table class="table table-bordered">
-            <thead class="table-light">
-              <tr>
-                <th>Score</th>
-                <th>Criteria</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span class="badge bg-success">High</span></td>
-                <td>Full agreement text public, parliamentary debate, terms disclosed, revenue sharing explained, exact signing date publicized</td>
-              </tr>
-              <tr>
-                <td><span class="badge bg-warning text-dark">Medium</span></td>
-                <td>Framework published, key terms known, some debate, but specific clauses not disclosed</td>
-              </tr>
-              <tr>
-                <td><span class="badge bg-danger">Low</span></td>
-                <td>Only press release available, basic outline known, specifics missing, little scrutiny</td>
-              </tr>
-              <tr>
-                <td><span class="badge badge-none">None</span></td>
-                <td>Agreement exists but no text available, terms completely undisclosed, no public debate, often even signing date unknown</td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <h3 class="h4 mb-4">Scoring Criteria</h3>
+          <div class="transparency-table table-responsive">
+            <table class="table mb-0">
+              <thead>
+                <tr>
+                  <th style="width: 25%;">Score</th>
+                  <th>Criteria</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="badge bg-success">High</span></td>
+                  <td>Full text public, parliamentary debate, terms disclosed, revenue explained, exact date</td>
+                </tr>
+                <tr>
+                  <td><span class="badge bg-warning text-dark">Medium</span></td>
+                  <td>Framework published, key terms known, some debate, details missing</td>
+                </tr>
+                <tr>
+                  <td><span class="badge bg-danger">Low</span></td>
+                  <td>Press release only, outline known, specifics missing, little scrutiny</td>
+                </tr>
+                <tr>
+                  <td><span class="badge badge-none">None</span></td>
+                  <td>No text available, terms undisclosed, no debate, often no date</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
-        <div class="col-md-6">
-          <h3 class="h5">Current Distribution (55 Deals):</h3>
-          <div class="stats-box">
-            <div class="mb-3">
-              <span class="badge badge-none me-2">No Transparency</span>
-              <strong>29%</strong> (16 deals)
+        <div class="col-lg-6 mb-4">
+          <h3 class="h4 mb-4">Distribution (55 Deals)</h3>
+          <div class="distribution-box">
+            <div class="distribution-item">
+              <div class="distribution-label">
+                <span class="badge badge-none">None</span>
+                <span>No Transparency</span>
+              </div>
+              <div class="distribution-value">29%</div>
             </div>
-            <div class="mb-3">
-              <span class="badge bg-danger me-2">Low Transparency</span>
-              <strong>20%</strong> (11 deals)
+            <div class="distribution-item">
+              <div class="distribution-label">
+                <span class="badge bg-danger">Low</span>
+                <span>Low Transparency</span>
+              </div>
+              <div class="distribution-value">20%</div>
             </div>
-            <div class="mb-3">
-              <span class="badge bg-warning text-dark me-2">Medium Transparency</span>
-              <strong>45%</strong> (25 deals)
+            <div class="distribution-item">
+              <div class="distribution-label">
+                <span class="badge bg-warning text-dark">Medium</span>
+                <span>Medium Transparency</span>
+              </div>
+              <div class="distribution-value">45%</div>
             </div>
-            <div class="mb-3">
-              <span class="badge bg-success me-2">High Transparency</span>
-              <strong>6%</strong> (3 deals)
+            <div class="distribution-item">
+              <div class="distribution-label">
+                <span class="badge bg-success">High</span>
+                <span>High Transparency</span>
+              </div>
+              <div class="distribution-value">6%</div>
             </div>
-            <p class="text-muted small mt-3 mb-0">
-              <em>Only 3 agreements out of 55 meet high transparency standards. Nearly half have low or no transparency. That's the governance gap we're documenting.</em>
+          </div>
+          <p class="text-muted mt-3 mb-0">
+            <small><em>Only 3 of 55 agreements meet high transparency standards. Nearly half have low or no transparency.</em></small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Submit information • Report corrections • Request briefings</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="contact-card">
+            <h3><i class="bi bi-envelope me-2 text-primary"></i>Contact Us</h3>
+            <p class="mb-3">
+              Know of a deal we missed? Have documents or information to share?
+            </p>
+            <p class="mb-2">
+              <strong>Twitter/X:</strong> <a href="https://twitter.com/SovWatchSo" target="_blank">@SovWatchSo</a>
+            </p>
+            <p class="mb-3">
+              <strong>Email:</strong> <a href="mailto:sovwatch@gmail.com">sovwatch@gmail.com</a>
+            </p>
+            <p class="text-muted small mb-0">
+              <i class="bi bi-shield-check me-2"></i>We protect source confidentiality when requested.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="contact-card">
+            <h3><i class="bi bi-pencil-square me-2 text-primary"></i>Corrections & Updates</h3>
+            <p class="mb-3">
+              Found an error? Have additional information? We update within 48 hours.
+            </p>
+            <p class="mb-0">
+              <strong>Transparency goes both ways.</strong> All submissions are reviewed and verified 
+              before being added to the database. We note all corrections publicly.
             </p>
           </div>
         </div>
@@ -411,120 +396,57 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title">Submit Information</h2>
-      <p class="lead">
-        Know of a deal we missed? Have documents or information to share?
-      </p>
-      <p>
-        We welcome submissions from journalists, researchers, government officials, and citizens.
-      </p>
-      
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <h3 class="h5">Contact Us:</h3>
-          <p>
-            <strong>Twitter/X:</strong> <a href="https://twitter.com/SovWatchSo" target="_blank" rel="noopener">@SovWatchSo</a><br>
-            <strong>Email:</strong> <a href="mailto:sovwatch@gmail.com">sovwatch@gmail.com</a>
-          </p>
-          <p class="text-muted small">
-            All submissions are reviewed and verified before being added to the database. 
-            We protect source confidentiality when requested.
-          </p>
-        </div>
-
-        <div class="col-md-6">
-          <h3 class="h5">Corrections & Updates:</h3>
-          <p>
-            Found an error? Have additional information?
-          </p>
-          <p>
-            We update within 48 hours and note all corrections publicly. Transparency goes both ways.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- FOOTER -->
-  <footer class="text-light py-4">
+  <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-6 mb-3">
-          <h5>Somalia Sovereignty Watch</h5>
-          <p class="mb-1">Independent, non-partisan research</p>
-          <p class="mb-1">55 documented agreements • $15B+ tracked</p>
-          <p class="mb-0">Contact: <a href="https://twitter.com/SovWatchSo" target="_blank" rel="noopener">@SovWatchSo</a></p>
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h5><i class="bi bi-flag me-2"></i>Somalia Sovereignty Watch</h5>
+          <p>Independent, non-partisan research</p>
+          <p>55 documented agreements • $15B+ tracked</p>
+          <p class="mb-0">
+            <a href="https://twitter.com/SovWatchSo" target="_blank">
+              <i class="bi bi-twitter me-2"></i>@SovWatchSo
+            </a>
+          </p>
         </div>
         <div class="col-md-6 text-md-end">
-          <p class="mb-1">Website: <a href="https://sovwatchsomalia.org">sovwatchsomalia.org</a></p>
-          <p class="mb-1">Last updated: February 2026</p>
-          <p class="mb-0 small text-muted">Public sources only • All claims sourced • Open data</p>
+          <p><strong>Website:</strong> <a href="https://sovwatchsomalia.org">sovwatchsomalia.org</a></p>
+          <p><strong>Last updated:</strong> February 2026</p>
+          <p class="text-muted small">Public sources only • All claims sourced • Open data</p>
         </div>
       </div>
-      <hr class="my-3" style="border-color: rgba(255,255,255,0.1);">
+      <hr>
       <div class="text-center">
-        <p class="mb-0 small">
-          🇸🇴 Public memory for public sovereignty
-        </p>
+        <p class="mb-0">🇸🇴 Public memory for public sovereignty</p>
       </div>
     </div>
   </footer>
 
-  <!-- Structured Data for Search Engines -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Dataset",
     "name": "Somalia Foreign Agreements Database",
-    "description": "Comprehensive public database documenting 55 foreign agreements involving Somalia, including defense pacts, port concessions, oil licensing, and fishing rights. Each entry includes transparency scoring, source documentation, and legal status analysis.",
+    "description": "Comprehensive public database documenting 55 foreign agreements involving Somalia, including defense pacts, port concessions, oil licensing, and fishing rights.",
     "url": "https://sovwatchsomalia.org/",
     "creator": {
       "@type": "Person",
       "name": "Mohamed Abdi Mohamed",
-      "description": "Digital Media & AI Automation Specialist, MSc Political Science & International Relations",
-      "sameAs": [
-        "https://www.linkedin.com/in/mohamed-abdi-mohamed-a9bb2ba4",
-        "https://twitter.com/SovWatchSo"
-      ]
+      "sameAs": ["https://www.linkedin.com/in/mohamed-abdi-mohamed-a9bb2ba4", "https://twitter.com/SovWatchSo"]
     },
-    "spatialCoverage": {
-      "@type": "Place",
-      "name": "Somalia"
-    },
+    "spatialCoverage": {"@type": "Place", "name": "Somalia"},
     "temporalCoverage": "2007/2026",
-    "keywords": [
-      "Somalia",
-      "foreign agreements",
-      "transparency",
-      "governance",
-      "Horn of Africa",
-      "defense deals",
-      "port concessions",
-      "civic tech"
-    ],
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "isAccessibleForFree": true,
-    "distribution": {
-      "@type": "DataDownload",
-      "encodingFormat": "HTML",
-      "contentUrl": "https://sovwatchsomalia.org/"
-    }
+    "keywords": ["Somalia", "foreign agreements", "transparency", "governance"],
+    "isAccessibleForFree": true
   }
   </script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Somalia Sovereignty Watch",
-    "url": "https://sovwatchsomalia.org/",
-    "description": "Public memory for public sovereignty - documenting foreign agreements involving Somalia",
-    "author": {
-      "@type": "Person",
-      "name": "Mohamed Abdi Mohamed",
-      "url": "https://www.linkedin.com/in/mohamed-abdi-mohamed-a9bb2ba4"
-    },
-    "inLanguage"
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+  </html>
